@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .arrow {
+    width: 48px;
+    height: 24px;
+    background: #000;
+    margin-right: 0px;
+    margin-top: -24px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}
