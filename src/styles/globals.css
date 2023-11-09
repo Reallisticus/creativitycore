@@ -11,4 +11,32 @@
     margin-top: -24px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
+
+  .three-canvas,
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .letter {
+    opacity: 0;
+    transform: translateX(100%);
+    display: inline-block;
+  }
+
+  .letter-animation {
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
